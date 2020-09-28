@@ -78,3 +78,22 @@ nn = 5
 n%5 ===0 || console.log('or연산자 앞이 참이면 그냥 실행');
 
 n%6 === 0 || console.log('or연산자 앞 false 시 실행');
+
+
+// 삼항연산자
+let nA = 5;
+console.log( nA % 5 === 0 ? 'True' : 'False');
+
+// switch
+let nB = 7;
+switch (nB % 5) {
+    case 0 : {
+        console.log('True 5 의 배수');
+        break;  // break 없으면 참인 case 와 default 같이 실행
+    }
+    case 2 :
+        console.log('True 5의 배수 아님');
+    default:
+        console.log('무관하게 실행');
+}
+
