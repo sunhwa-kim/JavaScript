@@ -1,21 +1,45 @@
+'use strict'
+
+let num = 1;
+console.log(num++);  // 1  보여준 후 계산
+console.log(num);    // 2
+console.log(++num);  // 3  계산 후 보여줌
+
+let bool = !false;
+console.log(bool);  // true
+console.log(bool && bool);  // true
+console.log(!bool || !bool);   // false
+
+// ! > && > ||
+const boolA = !(true && false || true && false || !false); 
+// ()안의 !false 가장 먼저 = true -> && 하고 || 후 -> !(true)
+// ( (true&&valse) ) 식으로 저장 하면서 자동으로 괄호 감싸짐
+console.log('boolA',boolA);   // false
+
+// 비교 연산자
 let a = null;
 let b = undefined;
 
 if (a==b){
-    console.log(a==b);
+    console.log(a==b); // true
 }
 
+console.log('== : ',0==false);   // true
+console.log('== : ',1==true);    // true
+console.log('== : ','1'==1);     // true
+
+// 지향
 if (a===b){
-    console.log(a===b);
+    console.log(a!==b);
 }else{
-    console.log(a===b);
+    console.log(a===b);  // false
 }
 
 
 let c = Number('test of typecasting');
 let d = Number('2020');
-console.log(c, typeof c);
-console.log(d, typeof d);
+console.log(c, typeof c);   // NaN number
+console.log(d, typeof d);   // 2020 number
 
 // template string - es6
 let aa = 'string test ';

@@ -1,3 +1,5 @@
+'use strict'
+
 const ironMan = {
     myName : '토니 스타크',
     actor : '로버트 다우니 주니어',

@@ -1,3 +1,5 @@
+'use strict'
+
 for (let i=0, j=3; i < 5 ; i++, j= j*j) {
     console.log('i++ , j*j',i,j);
 }
